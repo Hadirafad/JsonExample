@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JsonExample</string>
+    <array name="arr">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+
+    </array>
+</resources>
