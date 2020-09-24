@@ -1,8 +1,7 @@
 package com.example.jsonexample;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,22 +10,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.squareup.picasso.Picasso;
-
-import android.support.annotation.NonNull;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 
-    String status[],message,userid,name,mail;
-
+    String  status[],message[],userid[],name[], mail[],imag[];
     Context context;
 
-    public MyAdapter(Context ct,String jstatus[]){//,String jmessage,String juserid,String jtitle,String jname,String  jmail,String jdob,String jphone,String jcontry,String jimg){
+    public MyAdapter(Context ct,String jstatus[],String jmessage[],String juserid[],String jname[],String jmail[],String jimag[]){
 
         context=ct;
         status=jstatus;
+        message=jmessage;
+        userid=juserid;
+        name=jname;
+        mail=jmail;
+        imag=jimag;
+
     }
 
     @NonNull
@@ -41,12 +42,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int i) {
         holder.mytext1.setText(status[i]);
-        holder.mytext2.setText(message);
-        holder.mytext3.setText(userid);
-        holder.mytext5.setText(name);
-        holder.mytext6.setText(mail);
+        holder.mytext2.setText(message[i]);
+        holder.mytext3.setText(userid[i]);
+        holder.mytext5.setText(name[i]);
+        holder.mytext6.setText(mail[i]);
+
+
+        Glide
+                .with(context)
+                .load(imag[i])
+                .into(holder.myimage);
+        //   Glide.with(context).load(imag[i]).into(holder.myimage);
+
 
     }
+
 
     @Override
     public int getItemCount() {

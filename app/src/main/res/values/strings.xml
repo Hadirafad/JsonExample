@@ -6,6 +6,48 @@
         <item>abc</item>
         <item>abc</item>
         <item>abc</item>
+    </array>
 
+    <array name="jstatus">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </array>
+    <array name="jmessage">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </array>
+    <array name="juserid">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </array>
+    <array name="jname">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </array>
+    <array name="jmail">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </array>
+    <array name="jimag">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
     </array>
 </resources>
